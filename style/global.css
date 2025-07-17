@@ -3,9 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: var(--shape-background);
+    overflow-y: hidden;
+}
+h1 {
+     color: var(--text-heading);
+}
+span {
+    color: var(--text-heading);
+}
+
+p {
+     color: var(--text-heading);
+}
 
 main {
     height: 100vh;
+    padding:1rem;
+    gap: 1rem;
 }
 
 .container {

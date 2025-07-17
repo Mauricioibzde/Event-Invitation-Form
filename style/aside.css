@@ -1,12 +1,14 @@
 .aside-form {
     height: 100vh;
     overflow-y: auto;
+    background-color: var(--shape-body);
+    border-radius: 1rem;
 
 }
 
-
- 
-
+.background-high-light {
+     border-radius: 1rem;
+}
 
 .menu-form-title-name-of-event, .menu-description-input {
     grid-column: span 2/3;
