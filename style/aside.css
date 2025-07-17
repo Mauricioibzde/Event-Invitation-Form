@@ -1,0 +1,59 @@
+.aside-form {
+    height: 100vh;
+    overflow-y: auto;
+
+}
+
+
+ 
+
+
+.menu-form-title-name-of-event, .menu-description-input {
+    grid-column: span 2/3;
+
+}
+
+.menu-description-input {
+    & input {
+        height: 8.5rem;
+        
+    }
+
+}
+
+.btn-form {
+    display: flex;
+    gap: .5rem;
+  
+}
+
+aside {
+    overflow-y: auto;
+}
+
+.menu-form {
+    padding-block: 3rem;
+
+    & p {
+        padding-block: .75rem;
+    }
+}
+
+.color-btn {
+    display: flex;
+    gap: .5rem;
+}
+.card-thema {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    & img {
+        width: 100%;
+    }
+    & p {
+        text-align: center;
+    }
+}
