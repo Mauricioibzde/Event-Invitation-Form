@@ -1,10 +1,10 @@
 :root {
-  /* 🎨 BRAND COLORS */
+
   --brand-light: #59B2FF;
   --brand-mid: #3487CF;
   --brand-dark: #1D6FB6;
 
-  /* 💫 ACCENT COLORS */
+
   --accent-purple: #B259FF;
   --accent-fuschia: #FF59F9;
   --accent-pink: #FF598B;
@@ -15,21 +15,20 @@
   --accent-cyan: #59FFF9;
   --accent-navy: #6A59FF;
 
-  /* 🚨 FEEDBACK */
+
   --danger: #FF5959;
 
-  /* 📝 INPUT COLORS */
   --input-base: #1C1F21;
   --input-stroke: #363B40;
   --input-placeholder: #869198;
 
-  /* ⬛ SHAPE */
+
   --shape-background: #131516;
   --shape-body: #212427;
   --shape-button: #2D3136;
   --shape-hover: #383D42;
 
-  /* ✍️ TEXT COLORS */
+
   --text-body: #C8CDD0;
   --text-heading: #F9F9F9;
 
@@ -38,20 +37,18 @@
   --font-family-baloo-2: "Baloo 2", sans-serif;
   --font-family-open-sans: "Open Sans", sans-serif;
 
-  /* Font Sizes */
+
   --font-size-heading-md: 1.75rem;
   --font-size-heading-sm: 1.12rem;
   --font-size-body-md: 1rem;
   --font-size-body-sm: .8rem;
   --font-size-body-xs: .7rem;
 
-  /* Font Weights */
+
   --font-weight-bold: 700;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
 
-  /* Line Heights (auto - can be custom if needed) */
-  --line-height-auto: normal;
 
 
 
