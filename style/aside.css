@@ -26,6 +26,33 @@
 .btn-form {
     display: flex;
     gap: .5rem;
+    border: solid 1px var(--input-stroke) ;
+    padding: .2rem;
+     height: 2.8rem;
+     border-radius: .5rem;
+
+    & button {
+            width: 100%;
+            background-color: transparent;
+            border-radius: .5rem;
+            border: solid 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+            cursor: pointer;
+
+
+            & span {
+                color: var( --text-heading);
+            }
+        
+    }
+
+      & button:hover {
+                background-color: var(--shape-hover);
+
+      }
   
 }
 
@@ -41,9 +68,66 @@ aside {
     }
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+ 
+}
+
+input[type="date"] {
+  background-image: url('../assets/icons/calendar.png'); 
+  background-repeat: no-repeat;
+  background-position: right .5rem center; 
+  background-size: 1rem 1rem;
+  padding-right: 2rem; 
+}
+
 .color-btn {
     display: flex;
+    justify-content: space-between;
     gap: .5rem;
+
+    & button {
+        border-radius: 50%;
+        height: 2.5rem;
+        width: 2.5rem;
+        border: solid .4rem var(--input-stroke);
+        cursor: pointer;
+    }
+
+    & button:hover {
+        border: solid .2rem var(--input-stroke);
+    }
+
+      &  button:nth-child(1) {
+        background-color: var(--accent-cyan);
+      }
+         &  button:nth-child(2) {
+        background-color: var(--accent-navy);
+      }
+         &  button:nth-child(3) {
+        background-color: var(--accent-purple);
+      }
+        &  button:nth-child(4) {
+        background-color: var(--accent-fuschia);
+      }
+         &  button:nth-child(5) {
+        background-color: var(--accent-pink);
+      }
+         &  button:nth-child(6) {
+        background-color: var( --danger);
+      }
+         &  button:nth-child(7) {
+        background-color: var(--accent-orange);
+      }
+         &  button:nth-child(8) {
+        background-color: var(--accent-lime);
+      }
+         &  button:nth-child(9) {
+        background-color: var(--accent-green);
+      }
+         &  button:nth-child(10) {
+        background-color: var(--accent-cyan);
+      }
 }
 .card-thema {
     width: 100%;
@@ -52,10 +136,20 @@ aside {
 }
 
 .card {
+    background-color: var( --input-stroke);
+    border-radius: 1rem;
+    padding: .4rem;
+    border: solid 1px var( --input-base);
     & img {
         width: 100%;
     }
     & p {
         text-align: center;
+    }
+}
+
+.btn-switch {
+    & p {
+        padding-block: 1.2rem;
     }
 }
