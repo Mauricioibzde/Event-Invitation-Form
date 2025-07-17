@@ -8,6 +8,14 @@
 
 .background-high-light {
      border-radius: 1rem;
+
+     & h1 {
+     color: var(--text-heading);
+     font-family: var(--font-family-logo);
+     font-size: 2.5rem;
+     color: var(--accent-pink);
+}
+     
 }
 
 .menu-form-title-name-of-event, .menu-description-input {
@@ -152,4 +160,21 @@ input[type="date"] {
     & p {
         padding-block: 1.2rem;
     }
+}
+
+.menu-data-user {
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+}
+
+
+.menu-data-user div:nth-child(1) {
+  grid-column: span 2/3;
+}
+
+.menu-data-user {
+  & p {
+    padding-block: 1rem;
+  }
 }

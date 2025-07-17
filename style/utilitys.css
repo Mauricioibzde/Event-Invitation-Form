@@ -32,6 +32,29 @@
   /* ✍️ TEXT COLORS */
   --text-body: #C8CDD0;
   --text-heading: #F9F9F9;
+
+
+  --font-family-logo: "Leckerli One", cursive;
+  --font-family-baloo-2: "Baloo 2", sans-serif;
+  --font-family-open-sans: "Open Sans", sans-serif;
+
+  /* Font Sizes */
+  --font-size-heading-md: 1.75rem;
+  --font-size-heading-sm: 1.12rem;
+  --font-size-body-md: 1rem;
+  --font-size-body-sm: .8rem;
+  --font-size-body-xs: .7rem;
+
+  /* Font Weights */
+  --font-weight-bold: 700;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+
+  /* Line Heights (auto - can be custom if needed) */
+  --line-height-auto: normal;
+
+
+
 }
 
 .grid {

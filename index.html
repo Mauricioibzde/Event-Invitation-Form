@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de convite</title>
@@ -11,7 +20,7 @@
       <section class="background-high-light  background-fixed">
           <div>
             <p><img src="assets/icons/icons-party.png" alt=""></p>
-            <h1>Festivity</h1>
+            <h1 class="logo">Festivity</h1>
             <p><span>Crie um convite digital para o seu evento</span></p>
         </div>
       </section>
@@ -23,7 +32,7 @@
             <form>
                 <header>
                     <span><img src="assets/icons/calendar.png" alt=""></span>
-                    <span>Sobre o evento</span>
+                    <span class="baloo-txt">Sobre o evento</span>
                </header>
                 
                 <div class="menu-form grid grid-form">
@@ -66,7 +75,7 @@
             <section class="Personalization">
                 <header>
                     <span><img src="assets/icons/paintbrush-vertical.png" alt=""></span>
-                    <span>Personalização</span>
+                    <span class="baloo-txt">Personalização</span>
                 </header>
 
                 <header><p>Cor Principal</p></header>
@@ -138,16 +147,40 @@
             </section>
 
             <section>
-              <div class="btn-switch">
-                <p><span>Estilo</span></p>
-                  <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider"></span>
-                </label>
-              </div>
-              <div class="btn-data">
-                <!--I'am Here!-->
-              </div>
+                <div class="btn-switch-upload">
+                    <div class="btn-switch">
+                        <p><span>Estilo</span></p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="btn-data">
+                        <!--I'am Here!-->
+                    </div>
+                </div>
+
+                 <header>
+                    <span><img src="assets/icons/contact.png" alt=""></span>
+                    <span class="baloo-txt">Dados para Contato</span>
+                </header>
+
+                <div class="menu-data-user grid">
+                    <div>
+                        <p><span>Nome</span></p>
+                        <input id="" type="text" placeholder="Nome Completo">
+                   </div>
+                    <div>
+                        <p><span>Email:</span></p>
+                        <input id="" type="text" placeholder="exemplo@email.com">
+                   </div>
+                    <div>
+                        <p><span>Telefone</span></p>
+                        <input id="" type="text" placeholder="(99) 99999-9999 ">
+                   </div>
+                </div>
+
+              
             </section>
 
             
