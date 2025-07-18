@@ -23,11 +23,25 @@
 
 }
 
-.menu-description-input {
-    & input {
+.menu-description-text-area {
+  grid-column: span 2/3;
+  display: grid;
+    & #text-area {
         height: 8.5rem;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        border: solid 1px var(--input-stroke) ;
+        background-color: var(--input-base);
+         color: var(--input-placeholder);
+        
+
         
     }
+
+}
+
+textarea::placeholder{
+    color: var(--input-placeholder);
 
 }
 
@@ -67,14 +81,9 @@
 aside {
     overflow-y: auto;
 }
+ 
 
-.menu-form {
-    
 
-    & p {
-        padding-block: .75rem;
-    }
-}
 
 input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
@@ -204,7 +213,7 @@ input[type="date"] {
 }
 
 .menu-data-user {
-  & p {
+  & label span {
     padding-block: 1rem;
   }
 }
@@ -213,6 +222,10 @@ input[type="date"] {
   display: grid;
   justify-content: left;
   padding-block:2.5rem;
+}
+
+.terms-02 , .terms-03 {
+  justify-self: baseline;
 }
 
 
@@ -226,22 +239,27 @@ input[type="date"] {
 
 #btn-invite-send {
   min-width: 11rem;
-  min-height:3rem;
+  min-height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  background-color: var( --brand-dark);
+  background-color: var(--brand-dark);
   max-width: 10rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   cursor: pointer;
-  padding-inline:1.25rem;
+  padding-inline: 1.25rem;
+  transition: background-color 0.3s ease;
+}
 
-   & span {
-    font-family: var(--font-family-baloo-2);
-    font-weight: var(--font-size-body-md);
-   }
+#btn-invite-send:hover {
+  background-color: var(--brand-mid);
+}
+
+#btn-invite-send span {
+  font-family: var(--font-family-baloo-2);
+  font-weight: var(--font-size-body-md);
 }
 
 .btn-invite-send-class {
