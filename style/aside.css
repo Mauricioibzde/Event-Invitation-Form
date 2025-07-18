@@ -178,3 +178,43 @@ input[type="date"] {
     padding-block: 1rem;
   }
 }
+
+.terms-and-conditions {
+  display: grid;
+  justify-content: left;
+  padding-block:2.5rem;
+}
+
+
+.conditions {
+ display: grid;
+ grid-auto-flow: column;
+ gap: 1rem;
+ justify-content: center;
+ align-items: center;
+}
+
+#btn-invite-send {
+  min-width: 11rem;
+  min-height:3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var( --brand-dark);
+  max-width: 10rem;
+  border-radius: .5rem;
+  border: none;
+  cursor: pointer;
+  padding-inline:1.25rem;
+
+   & span {
+    font-family: var(--font-family-baloo-2);
+    font-weight: var(--font-size-body-md);
+   }
+}
+
+.btn-invite-send-class {
+  display: flex;
+  justify-content: end;
+}
