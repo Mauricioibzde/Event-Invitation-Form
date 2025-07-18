@@ -89,6 +89,8 @@ input[type="date"] {
   padding-right: 2rem; 
 }
 
+
+
 .color-btn {
     display: flex;
     justify-content: space-between;
@@ -137,6 +139,34 @@ input[type="date"] {
         background-color: var(--accent-cyan);
       }
 }
+
+.btn-form #btn-building svg {
+  stroke: white;
+  transition: stroke 0.3s ease;
+
+}
+
+.btn-form  #btn-building:hover svg {
+  stroke: var(  --brand-light);
+  transition: stroke 0.3s ease;
+
+}
+
+.btn-form #btn-video svg {
+  stroke: white;
+  transition: stroke 0.3s ease;
+
+}
+.btn-form  #btn-video:hover svg {
+  stroke: var(--danger);
+  transition: stroke 0.3s ease;
+
+}
+
+
+
+
+
 .card-thema {
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
