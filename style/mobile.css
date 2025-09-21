@@ -42,6 +42,10 @@ header {
 main {
     height: auto;
 }
+.color-btn {
+
+    justify-content: center;
+}
 
 
 }
