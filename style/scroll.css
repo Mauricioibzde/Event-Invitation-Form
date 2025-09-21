@@ -1,0 +1,30 @@
+.aside-form {
+  overflow-y: auto;
+  background-color: var(--shape-body);
+  border-radius: 1rem;
+  padding-right: 8px; /* evita que o scroll esconda conteúdo */
+}
+
+/* Scrollbar para Chrome, Edge e Safari */
+.aside-form::-webkit-scrollbar {
+  width: 8px;                /* largura */
+}
+
+.aside-form::-webkit-scrollbar-track {
+  background: transparent;   /* trilho transparente */
+}
+
+.aside-form::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #4facfe, #00f2fe);
+  border-radius: 10px;
+}
+
+.aside-form::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #43e97b, #38f9d7);
+}
+
+/* Firefox */
+.aside-form {
+  scrollbar-width: thin;                       /* "auto" ou "thin" */
+  scrollbar-color: #4facfe transparent;        /* polegar e trilho */
+}

@@ -1,3 +1,47 @@
 @media (max-width: 900px) {
-  
+  .mobile-column {
+    display: grid;
+    grid-auto-flow: dense;
+     grid-template-columns: 1fr;
+  }
+
+  .container {
+     padding: .5rem;
+  }
+
+  .menu-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .background-aside-mobile {
+   
+     height: 400px;
+  }
+
+  body {
+    overflow: auto;
+  }
+
+
+
+  .aside-mobile {
+  padding-bottom: 5rem;
+   overflow-y: hidden;
+}
+.card-thema {
+    justify-content: center;
+}
+
+
+header {
+    justify-content: center;
+}
+
+
+main {
+    height: auto;
+}
+
+
 }

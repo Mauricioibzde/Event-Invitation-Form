@@ -1,5 +1,5 @@
 .aside-form {
-    height: 100vh;
+  
     overflow-y: auto;
     background-color: var(--shape-body);
     border-radius: 1rem;
@@ -79,7 +79,8 @@ textarea::placeholder{
 }
 
 aside {
-    overflow-y: auto;
+  height: 100%;
+    
 }
  
 
@@ -102,7 +103,7 @@ input[type="date"] {
 
 .color-btn {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     gap: .5rem;
 
     & button {
@@ -178,7 +179,9 @@ input[type="date"] {
 
 .card-thema {
     width: 100%;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
