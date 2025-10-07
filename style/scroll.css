@@ -1,9 +1,3 @@
-.aside-form {
-  overflow-y: auto;
-  background-color: var(--shape-body);
-  border-radius: 1rem;
-  padding-right: 8px; /* evita que o scroll esconda conteúdo */
-}
 
 /* Scrollbar para Chrome, Edge e Safari */
 .aside-form::-webkit-scrollbar {

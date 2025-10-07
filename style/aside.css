@@ -3,6 +3,9 @@
   overflow-y: auto;
   background-color: var(--shape-body);
   border-radius: 1rem;
+  padding: 4rem 6rem;
+   
+
 
 }
 
@@ -28,27 +31,8 @@
   grid-column: span 2/3;
   display: grid;
 
-  & #text-area {
-    all: unset;
-    /* remove praticamente todos os estilos padrões */
-
-    /* Agora você aplica só o que quiser */
-    height: 8.5rem;
-    padding: .5rem 1rem;
-    border-radius: .5rem;
-    border: 1px solid var(--input-stroke);
-    background-color: var(--input-base);
-    color: var(--input-placeholder);
 
 
-    resize: none;
- 
-    outline: none;
- 
-
-
-
-  }
 
 }
 
@@ -59,22 +43,30 @@ textarea::placeholder {
 
 .btn-form {
   display: flex;
-  gap: .5rem;
-  border: solid 1px var(--input-stroke);
   padding: .2rem;
+  gap: .5rem;
+   border: none;
   height: 2.8rem;
   border-radius: .5rem;
+  border: solid 1px var(--input-stroke);
+  background-color: var(--input-base);
 
-  & button {
-    width: 100%;
-    background-color: transparent;
-    border-radius: .5rem;
-    border: solid 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-    cursor: pointer;
+& button {
+  width: 100%;
+  background-color: transparent;
+  border-radius: .5rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  cursor: pointer;
+
+  &:focus {
+    background-color: var(--shape-hover);
+  }
+}
+
 
 
     & span {
@@ -249,6 +241,12 @@ input[type="date"] {
   display: grid;
   justify-content: left;
   padding-block: 2.5rem;
+
+  & span {
+    color: var(--brand-light);
+    border-bottom: solid 1px white;
+   
+  }
 }
 
 .terms-02,
@@ -293,4 +291,5 @@ input[type="date"] {
 .btn-invite-send-class {
   display: flex;
   justify-content: end;
+  padding: 3rem;
 }

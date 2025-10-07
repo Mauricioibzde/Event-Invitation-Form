@@ -6,77 +6,56 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Leckerli+One&family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formulário de convite</title>
+<title>Invitation Form</title>
 <link rel="stylesheet" href="style/index.css">
-
 </head>
+
 <body>
-    <main class="grid column-grid  mobile-column">
-      <section class="background-high-light  background-fixed background-aside-mobile">
+    <main class="grid column-grid mobile-column">
+      <section class="background-high-light background-fixed background-aside-mobile">
           <div>
             <p><img src="assets/icons/icons-party.png" alt=""></p>
             <h1 class="logo">Festivity</h1>
-            <p><span>Crie um convite digital para o seu evento</span></p>
+            <p><span>Create a digital invitation for your event</span></p>
         </div>
       </section>
-       <section class="aside-form section-principal">
-         <aside class="container aside-mobile ">
+
+      <section class="aside-form section-principal">
+         <aside class="aside-mobile">
             <header>
-                <h1>Crie seu convite</h1>
+                <h1>Create your invitation</h1>
             </header> 
+
             <form>
                 <header>
                     <span><img src="assets/icons/calendar.svg" alt=""></span>
-                    <span class="baloo-txt">Sobre o evento</span>
+                    <span class="baloo-txt">About the event</span>
                </header>
                 
                 <div class="menu-form grid grid-form">
                     <div class="menu-form-title-name-of-event">
-                        <label for="title-of-event"><span>Título</span></label>
-                        <input id="input-title-of-event" type="text" name="titulo" placeholder="Nome do Evento" required>
+                        <label for="title-of-event"><span>Title</span></label>
+                        <input id="input-title-of-event" type="text" name="title" placeholder="Event name" required>
                    </div>
+
                     <div class="menu-form-start">
-                        <label for="inicio-evento"><span>Início</span></label>
-                        <input id="inicio-evento" type="date" name="inicio" required />
+                        <label for="inicio-evento"><span>Start</span></label>
+                        <input id="inicio-evento" type="date" name="start" required />
                     </div>
 
-
-                    <!--<div class="menu-form-end">
-                        <p><span>Fim</span></p>
-                        <input id="" type="date" placeholder="">
-                   </div>
-
-                     <div class="menu-btn-select">
-                        <p><span>Tipo</span></p>
-                        <div class="btn-form">
-                             <button id="btn-building"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2-icon lucide-building-2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg><span>Presencial</span></button>
-                              <button id="btn-video"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video-icon lucide-video"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg><span>Online</span></button>
-                        </div>
-                       
-                   </div>
-
-                      <div class="menu-local-input">
-                        <p><span>Local</span></p>
-                        <input type="text" placeholder="Link ou endereço">
-                   </div>
-
-                     <div class="menu-description-input">
-                        <p><span>Descrição</span></p>
-                        <input type="text" placeholder="Link ou endereço">
-                   </div>-->
-
                    <div class="menu-form-end">
-                    <label for="fim-evento"><span>Fim</span></label>
-                    <input id="fim-evento" type="date" name="fim" required />
+                    <label for="fim-evento"><span>End</span></label>
+                    <input id="fim-evento" type="date" name="end" required />
                     </div>
 
                     <div class="menu-btn-select">
-                    <label><span>Tipo</span></label> <!-- Sem 'for' pois é um grupo de botões -->
-                    <div class="btn-form" role="group" aria-label="Tipo do evento">
+                    <label><span>Type</span></label> <!-- No 'for' since it's a button group -->
+                    <div class="btn-form" role="group" aria-label="Event type">
                         <button id="btn-building" type="button" aria-pressed="false">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2-icon lucide-building-2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
-                        <span>Presencial</span>
+                        <span>In-person</span>
                         </button>
+
                         <button id="btn-video" type="button" aria-pressed="false">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video-icon lucide-video"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
                         <span>Online</span>
@@ -85,27 +64,26 @@
                     </div>
 
                     <div class="menu-local-input">
-                    <label for="local-evento"><span>Local</span></label>
-                    <input id="local-evento" type="text" name="local" placeholder="Link ou endereço" />
+                    <label for="local-evento"><span>Location</span></label>
+                    <input id="local-evento" type="text" name="location" placeholder="Link or address" />
                     </div>
 
                     <div class="menu-description-text-area">
-                    <label for="descricao-evento"><span>Descrição</span></label>
-                    <textarea id="text-area" name="descricao" placeholder="Descreva o evento!" rows="3"></textarea>
+                    <label for="descricao-evento"><span>Description</span></label>
+                    <textarea id="text-area" name="description" placeholder="Describe your event!" rows="3"></textarea>
                     </div>
-
-
                 </div>
             </form>
+
             <section class="Personalization">
                 <header class="gap-0">
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-paintbrush-vertical-icon lucide-paintbrush-vertical"><path d="M10 2v2"/><path d="M14 2v4"/><path d="M17 2a1 1 0 0 1 1 1v9H6V3a1 1 0 0 1 1-1z"/><path d="M6 12a1 1 0 0 0-1 1v1a2 2 0 0 0 2 2h2a1 1 0 0 1 1 1v2.9a2 2 0 1 0 4 0V17a1 1 0 0 1 1-1h2a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1"/></svg></span>
-                    <span class="baloo-txt">Personalização</span>
+                    <span class="baloo-txt">Personalization</span>
                 </header>
 
-                <header><p>Cor Principal</p></header>
+                <header><p>Main Color</p></header>
                 <div class="color-btn color-btn-align">
-                <button id="color-btn-1"></button>
+                        <button id="color-btn-1"></button>
                         <button id="color-btn-2"></button>
                         <button id="color-btn-3"></button>
                         <button id="color-btn-4"></button>
@@ -116,44 +94,44 @@
                         <button id="color-btn-9"></button>
                         <button id="color-btn-10"></button>
                 </div>
-                <header><p>Tema do Evento</p></header>
 
+                <header><p>Event Theme</p></header>
                 <div class="card-thema grid">
                     <div class="card">
                         <img src="assets/img/Image-01.png" alt="">
-                        <p><span>Aniversário</span></p>
+                        <p><span>Birthday</span></p>
                     </div>
                      <div class="card">
                         <img src="assets/img/image-02.png" alt="">
-                        <p><span>Infantil</span></p>
+                        <p><span>Kids</span></p>
                     </div>
                      <div class="card">
                         <img src="assets/img/image-03.png" alt="">
-                        <p><span>Formatura</span></p>
+                        <p><span>Graduation</span></p>
                     </div>
                      <div class="card">
                         <img src="assets/img/Image-04.png" alt="">
-                        <p><span>Casamento</span></p>
+                        <p><span>Wedding</span></p>
                     </div>
                      <div class="card">
                         <img src="assets/img/Image-05.png" alt="">
-                        <p><span>Chá de bebê</span></p>
+                        <p><span>Baby Shower</span></p>
                     </div>
                      <div class="card">
                         <img src="assets/img/Image-06.png" alt="">
-                        <p><span>Chá de panela</span></p>
+                        <p><span>Bridal Shower</span></p>
                     </div>
                      <div class="card">
                         <img src="assets/img/Image-07.png" alt="">
-                        <p><span>Carnaval</span></p>
+                        <p><span>Carnival</span></p>
                     </div>
                      <div class="card">
                         <img src="assets/img/Image-08.png" alt="">
-                        <p><span>Páscoa</span></p>
+                        <p><span>Easter</span></p>
                     </div>
                      <div class="card">
                         <img src="assets/img/Image-09.png" alt="">
-                        <p><span>São João</span></p>
+                        <p><span>June Festival</span></p>
                     </div>
                      <div class="card">
                         <img src="assets/img/Image-10.png" alt="">
@@ -161,88 +139,73 @@
                     </div>
                      <div class="card">
                         <img src="assets/img/Image-11.png" alt="">
-                        <p><span>Natal</span></p>
+                        <p><span>Christmas</span></p>
                     </div>
                      <div class="card">
-                        <img src="assets/img/Image-12.png " alt="">
-                        <p><span>Outro</span></p>
+                        <img src="assets/img/Image-12.png" alt="">
+                        <p><span>Other</span></p>
                     </div>
-
                 </div>
             </section>
 
             <section>
                 <div class="btn-switch-upload">
                     <div class="btn-switch">
-                        <p><span>Estilo</span></p>
+                        <p><span>Style</span></p>
                         <label class="switch">
                             <input type="checkbox">
                             <span class="slider"></span>
                         </label>
                     </div>
                     <div class="btn-data">
-                        <!--I'am Here!-->
+                        <!-- I'm here! -->
                     </div>
                 </div>
 
                  <header>
                     <span><img src="assets/icons/contact.svg" alt=""></span>
-                    <span class="baloo-txt">Dados para Contato</span>
+                    <span class="baloo-txt">Contact Information</span>
                 </header>
 
                 <div class="menu-data-user grid">
                     <div>
-                        <label for="nome-contato"><span>Nome</span></label>
-                        <input id="nome-contato" name="nome" type="text" placeholder="Nome Completo" required>
+                        <label for="nome-contato"><span>Name</span></label>
+                        <input id="nome-contato" name="name" type="text" placeholder="Full Name" required>
                     </div>
                     <div>
                         <label for="email-contato"><span>Email</span></label>
-                        <input id="email-contato" name="email" type="email" placeholder="exemplo@email.com" required>
+                        <input id="email-contato" name="email" type="email" placeholder="example@email.com" required>
                     </div>
                     <div>
-                        <label for="telefone-contato"><span>Telefone</span></label>
-                        <input id="telefone-contato" name="telefone" type="tel" placeholder="(99) 99999-9999" required>
+                        <label for="telefone-contato"><span>Phone</span></label>
+                        <input id="telefone-contato" name="phone" type="tel" placeholder="(99) 99999-9999" required>
                     </div>
                 </div>
-
 
                 <div class="terms-and-conditions">
                    <div class="terms-01 conditions">
                      <input type="checkbox">
-                    <p>Li e concordo com os <span>Termos e Condições</span> e com a <span>Política de Privacidade</span></p>
+                    <p>I have read and agree to the <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
                    </div>
                    <div class="terms-02 conditions">
                      <input type="checkbox">
-                    <p>Aceito receber atualizações e promoções por e-mail</p>
+                    <p>I agree to receive updates and promotions by email</p>
                    </div>
                    <div class="terms-03 conditions">
                      <input type="checkbox">
-                    <p>Aceito receber atualizações e promoções por e-mail</p>
+                    <p>I agree to receive updates and promotions by email</p>
                    </div>
                 </div>
-
 
                 <div class="btn-invite-send-class">
                     <button id="btn-invite-send">
                         <img src="./assets/icons/ticket.svg" alt="">
-                        <span>Gerar Convite</span>
+                        <span>Generate Invitation</span>
                     </button>
                 </div>
-
-              
             </section>
-
-
-
-            
         </aside>
-
-      
-
-       </section> <!--Section-Principal-->
-      
+       </section> <!--Main Section-->
     </main>
-  
-    
 </body>
 </html>
