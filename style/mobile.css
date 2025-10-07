@@ -1,4 +1,13 @@
 @media (max-width: 900px) {
+
+  .aside-form {
+
+
+  padding: 2rem 1rem;
+   
+
+
+}
   .mobile-column {
     display: grid;
     grid-auto-flow: dense;
@@ -26,7 +35,7 @@
 
 
   .aside-mobile {
-  padding-bottom: 5rem;
+ 
    overflow-y: hidden;
 }
 .card-thema {
@@ -45,6 +54,12 @@ main {
 .color-btn {
 
     justify-content: center;
+}
+
+.btn-invite-send-class {
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
 }
 
 
