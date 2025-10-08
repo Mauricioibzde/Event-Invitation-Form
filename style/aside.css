@@ -1,295 +1,317 @@
+/* === ASIDE FORM === */
 .aside-form {
-
   overflow-y: auto;
   background-color: var(--shape-body);
   border-radius: 1rem;
   padding: 4rem 6rem;
-   
-
-
 }
 
+/* === BACKGROUND HIGHLIGHT === */
 .background-high-light {
   border-radius: 1rem;
 
-  & h1 {
-    color: var(--text-heading);
+  h1 {
     font-family: var(--font-family-logo);
     font-size: 2.5rem;
     color: var(--accent-pink);
   }
-
 }
 
+/* === FORM GRID AREAS === */
 .menu-form-title-name-of-event,
-.menu-description-input {
-  grid-column: span 2/3;
-
+.menu-description-input,
+.menu-description-text-area {
+  grid-column: span 2 / 3;
 }
 
 .menu-description-text-area {
-  grid-column: span 2/3;
   display: grid;
-
-
-
-
 }
 
+/* === TEXTAREA PLACEHOLDER === */
 textarea::placeholder {
   color: var(--input-placeholder);
-
 }
 
+/* === BUTTON FORM === */
 .btn-form {
   display: flex;
-  padding: .2rem;
-  gap: .5rem;
-   border: none;
-  height: 2.8rem;
-  border-radius: .5rem;
-  border: solid 1px var(--input-stroke);
-  background-color: var(--input-base);
-
-& button {
-  width: 100%;
-  background-color: transparent;
-  border-radius: .5rem;
-  border: none;
-  display: flex;
-  justify-content: center;
   align-items: center;
   gap: .5rem;
-  cursor: pointer;
+  padding: .2rem;
+  height: 2.8rem;
+  border: none;
+  border-radius: .5rem;
+  background-color: var(--input-base);
 
-  &:focus {
-    background-color: var(--shape-hover);
-  }
-}
+  button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: transparent;
+    cursor: pointer;
 
-
-
-    & span {
-      color: var(--text-heading);
+    &:hover,
+    &:focus {
+      background-color: var(--shape-hover);
+      
     }
 
+    span {
+      color: var(--text-heading);
+    }
   }
-
-  & button:hover {
-    background-color: var(--shape-hover);
-
-  }
-
 }
 
-aside {
-  height: 100%;
-
-}
-
-
-
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
-
-}
-
+/* === INPUT DATE === */
 input[type="date"] {
-  background-image: url('../assets/icons/calendar.png');
-  background-repeat: no-repeat;
-  background-position: right .5rem center;
-  background-size: 1rem 1rem;
+  
+  background-size: 1rem;
   padding-right: 2rem;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
 
-
+/* === COLOR BUTTONS === */
 .color-btn {
   display: flex;
   flex-wrap: wrap;
   gap: .5rem;
 
-  & button {
-    border-radius: 50%;
-    height: 2.5rem;
+  button {
     width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
     border: solid .4rem var(--input-stroke);
     cursor: pointer;
-  }
 
-  & button:hover {
-    border: solid .2rem var(--input-stroke);
-  }
+    &:hover {
+      border: solid .2rem var(--input-stroke);
+    }
 
-  & button:nth-child(1) {
-    background-color: var(--accent-cyan);
-  }
-
-  & button:nth-child(2) {
-    background-color: var(--accent-navy);
-  }
-
-  & button:nth-child(3) {
-    background-color: var(--accent-purple);
-  }
-
-  & button:nth-child(4) {
-    background-color: var(--accent-fuschia);
-  }
-
-  & button:nth-child(5) {
-    background-color: var(--accent-pink);
-  }
-
-  & button:nth-child(6) {
-    background-color: var(--danger);
-  }
-
-  & button:nth-child(7) {
-    background-color: var(--accent-orange);
-  }
-
-  & button:nth-child(8) {
-    background-color: var(--accent-lime);
-  }
-
-  & button:nth-child(9) {
-    background-color: var(--accent-green);
-  }
-
-  & button:nth-child(10) {
-    background-color: var(--accent-cyan);
+    &:nth-child(1) { background-color: var(--accent-cyan); }
+    &:nth-child(2) { background-color: var(--accent-navy); }
+    &:nth-child(3) { background-color: var(--accent-purple); }
+    &:nth-child(4) { background-color: var(--accent-fuschia); }
+    &:nth-child(5) { background-color: var(--accent-pink); }
+    &:nth-child(6) { background-color: var(--danger); }
+    &:nth-child(7) { background-color: var(--accent-orange); }
+    &:nth-child(8) { background-color: var(--accent-lime); }
+    &:nth-child(9) { background-color: var(--accent-green); }
+    &:nth-child(10) { background-color: var(--accent-cyan); }
   }
 }
 
-.btn-form #btn-building svg {
+/* === BUTTON ICON EFFECTS === */
+.btn-form #btn-building svg,
+.btn-form #btn-video svg {
   stroke: white;
   transition: stroke 0.3s ease;
-
 }
 
 .btn-form #btn-building:hover svg {
   stroke: var(--brand-light);
-  transition: stroke 0.3s ease;
-
-}
-
-.btn-form #btn-video svg {
-  stroke: white;
-  transition: stroke 0.3s ease;
-
 }
 
 .btn-form #btn-video:hover svg {
   stroke: var(--danger);
-  transition: stroke 0.3s ease;
-
 }
 
-
-
-
-
+/* === CARD THEMES === */
 .card-thema {
-  width: 100%;
   display: flex;
-
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 1rem;
+  width: 100%;
 }
 
 .card {
   background-color: var(--input-stroke);
+  border: solid 1px var(--input-base);
   border-radius: 1rem;
   padding: .4rem;
-  border: solid 1px var(--input-base);
 
-  & img {
+  img {
     width: 100%;
   }
 
-  & p {
+  p {
     text-align: center;
   }
 }
 
-.btn-switch {
-  & p {
-    padding-block: 1.2rem;
-  }
-}
-
+/* === USER DATA MENU === */
 .menu-data-user {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 
-}
+  div:first-child {
+    grid-column: span 2;
+  }
 
-
-.menu-data-user div:nth-child(1) {
-  grid-column: span 2/3;
-}
-
-.menu-data-user {
-  & label span {
+  label span {
     padding-block: 1rem;
   }
 }
 
+/* === TERMS AND CONDITIONS === */
 .terms-and-conditions {
   display: grid;
-  justify-content: left;
+  justify-content: start;
   padding-block: 2.5rem;
 
-  & span {
+  span {
     color: var(--brand-light);
     border-bottom: solid 1px white;
-   
   }
 }
-
-.terms-02,
-.terms-03 {
-  justify-self: baseline;
-}
-
 
 .conditions {
   display: grid;
   grid-auto-flow: column;
   gap: 1rem;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
 
+/* === SEND INVITE BUTTON === */
 #btn-invite-send {
-  min-width: 11rem;
-  min-height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  background-color: var(--brand-dark);
+  min-width: 11rem;
+  min-height: 3rem;
   max-width: 10rem;
-  border-radius: 0.5rem;
-  border: none;
-  cursor: pointer;
   padding-inline: 1.25rem;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  background-color: var(--brand-dark);
   transition: background-color 0.3s ease;
-}
 
-#btn-invite-send:hover {
-  background-color: var(--brand-mid);
-}
+  &:hover {
+    background-color: var(--brand-mid);
+  }
 
-#btn-invite-send span {
-  font-family: var(--font-family-baloo-2);
-  font-weight: var(--font-size-body-md);
+  span {
+    font-family: var(--font-family-baloo-2);
+    font-weight: var(--font-size-body-md);
+  }
 }
 
 .btn-invite-send-class {
   display: flex;
   justify-content: end;
-  padding: 3rem;
+  padding: 3.1rem;
 }
+
+/* === SWITCH & UPLOAD SECTION === */
+.btn-switch-upload {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+ 
+
+  padding-block: 2rem;
+
+  .slide {
+    align-self: flex-end;
+  }
+
+  div:nth-child(2) input {
+    width: 100%;
+    height: 2rem;
+  }
+}
+
+.btn-switch,
+.btn-upload {
+  display: grid;
+  gap: .5rem;
+}
+
+/* === FILE UPLOAD === */
+.btn-upload {
+  display: grid;
+  gap: .5rem;
+  font-family: var(--font-family-open-sans);
+  justify-self: center;
+}
+
+.upload-title {
+  color: var(--text-heading);
+  font-weight: 600;
+}
+
+.file-upload {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.custom-file-label {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .3rem 2rem;
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  background-color: var(--shape-body);
+  color: var(--text-heading);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: var(--shape-hover);
+  }
+
+  img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.file-name {
+  color: var(--input-placeholder);
+  font-size: .9rem;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.icon-upload {
+  & svg {
+     height: 1rem;
+  }
+}
+
+.icon-upload:hover {
+   color: var( --brand-mid);
+}
+
+
+/* Quando o label for hover, muda a cor do ícone */
+.custom-file-label:hover .icon-upload {
+    color: var(--brand-mid);
+}
+
+.status-file {
+  color: var(--input-placeholder);
+}
+
+
+
+
+

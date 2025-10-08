@@ -1,66 +1,62 @@
+/* === MEDIA QUERY: MOBILE / TABLET (max-width: 900px) === */
 @media (max-width: 900px) {
 
-  .aside-form {
+    /* === ASIDE FORM === */
+    .aside-form {
+        padding: 2rem 1rem;
+    }
 
+    /* === CONTAINER === */
+    .container {
+        padding: 0.5rem;
+    }
 
-  padding: 2rem 1rem;
-   
+    /* === GRID / LAYOUT ADJUSTMENTS === */
+    .mobile-column {
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: 1fr;
+    }
 
+    .menu-form {
+        display: flex;
+        flex-direction: column;
+    }
 
-}
-  .mobile-column {
-    display: grid;
-    grid-auto-flow: dense;
-     grid-template-columns: 1fr;
-  }
+    .background-aside-mobile {
+        height: 400px;
+    }
 
-  .container {
-     padding: .5rem;
-  }
+    /* === BODY / SCROLL ADJUSTMENTS === */
+    body {
+        overflow: auto;
+    }
 
-  .menu-form {
-    display: flex;
-    flex-direction: column;
-  }
+    .aside-mobile {
+        overflow-y: hidden;
+    }
 
-  .background-aside-mobile {
-   
-     height: 400px;
-  }
+    main {
+        height: auto;
+    }
 
-  body {
-    overflow: auto;
-  }
+    /* === CARD THEMES & BUTTONS === */
+    .card-thema {
+        justify-content: center;
+    }
 
+    .color-btn {
+        justify-content: center;
+    }
 
+    .btn-invite-send-class {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+    }
 
-  .aside-mobile {
- 
-   overflow-y: hidden;
-}
-.card-thema {
-    justify-content: center;
-}
-
-
-header {
-    justify-content: center;
-}
-
-
-main {
-    height: auto;
-}
-.color-btn {
-
-    justify-content: center;
-}
-
-.btn-invite-send-class {
-    display: flex;
-    justify-content: end;
-    padding: 1rem;
-}
-
-
+    /* === HEADER === */
+    header {
+        justify-content: center;
+    }
 }

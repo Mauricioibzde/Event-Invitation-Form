@@ -1,59 +1,58 @@
+/* === ROOT VARIABLES === */
 :root {
+    /* === BRAND COLORS === */
+    --brand-light: #59B2FF;
+    --brand-mid: #3487CF;
+    --brand-dark: #1D6FB6;
 
-  --brand-light: #59B2FF;
-  --brand-mid: #3487CF;
-  --brand-dark: #1D6FB6;
+    /* === ACCENT COLORS === */
+    --accent-purple: #B259FF;
+    --accent-fuschia: #FF59F9;
+    --accent-pink: #FF598B;
+    --accent-orange: #FF8B59;
+    --accent-yellow: #FFCD59;
+    --accent-lime: #E1FF59;
+    --accent-green: #59FF91;
+    --accent-cyan: #59FFF9;
+    --accent-navy: #6A59FF;
 
+    /* === ALERTS === */
+    --danger: #FF5959;
 
-  --accent-purple: #B259FF;
-  --accent-fuschia: #FF59F9;
-  --accent-pink: #FF598B;
-  --accent-orange: #FF8B59;
-  --accent-yellow: #FFCD59;
-  --accent-lime: #E1FF59;
-  --accent-green: #59FF91;
-  --accent-cyan: #59FFF9;
-  --accent-navy: #6A59FF;
+    /* === INPUTS === */
+    --input-base: #1C1F21;
+    --input-stroke: #363B40;
+    --input-placeholder: #869198;
 
+    /* === SHAPE / BACKGROUND === */
+    --shape-background: #131516;
+    --shape-body: #212427;
+    --shape-button: #2D3136;
+    --shape-hover: #383D42;
 
-  --danger: #FF5959;
+    /* === TEXT COLORS === */
+    --text-body: #C8CDD0;
+    --text-heading: #F9F9F9;
 
-  --input-base: #1C1F21;
-  --input-stroke: #363B40;
-  --input-placeholder: #869198;
+    /* === FONT FAMILIES === */
+    --font-family-logo: "Leckerli One", cursive;
+    --font-family-baloo-2: "Baloo 2", sans-serif;
+    --font-family-open-sans: "Open Sans", sans-serif;
 
+    /* === FONT SIZES === */
+    --font-size-heading-md: 1.75rem;
+    --font-size-heading-sm: 1.12rem;
+    --font-size-body-md: 1rem;
+    --font-size-body-sm: 0.8rem;
+    --font-size-body-xs: 0.7rem;
 
-  --shape-background: #131516;
-  --shape-body: #212427;
-  --shape-button: #2D3136;
-  --shape-hover: #383D42;
-
-
-  --text-body: #C8CDD0;
-  --text-heading: #F9F9F9;
-
-
-  --font-family-logo: "Leckerli One", cursive;
-  --font-family-baloo-2: "Baloo 2", sans-serif;
-  --font-family-open-sans: "Open Sans", sans-serif;
-
-
-  --font-size-heading-md: 1.75rem;
-  --font-size-heading-sm: 1.12rem;
-  --font-size-body-md: 1rem;
-  --font-size-body-sm: .8rem;
-  --font-size-body-xs: .7rem;
-
-
-  --font-weight-bold: 700;
-  --font-weight-regular: 400;
-  --font-weight-semibold: 600;
-
-
-
-
+    /* === FONT WEIGHTS === */
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
 }
 
+/* === GRID UTILITIES === */
 .grid {
     display: grid;
 }
@@ -64,17 +63,14 @@
 }
 
 .gap-0 {
-    gap: 0px;
+    gap: 0;
 }
 
-
-
-
+/* === BACKGROUND IMAGE UTILITY === */
 .background-fixed {
-    background-image: url(../assets/img/Background.png);
+    background-image: url('../assets/img/Background.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 2rem;
-  
 }

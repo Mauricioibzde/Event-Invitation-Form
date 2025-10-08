@@ -1,13 +1,17 @@
-*{
+/* === RESET === */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* === BODY === */
 body {
     background-color: var(--shape-background);
     overflow-y: hidden;
 }
 
+/* === TYPOGRAPHY === */
 h1 {
     font-family: var(--font-family-baloo-2);
     font-size: var(--font-size-heading-md);
@@ -15,35 +19,32 @@ h1 {
 }
 
 .baloo-txt {
-     font-family: var(--font-family-baloo-2);
-     font-weight: var(--font-weight-bold);
+    font-family: var(--font-family-baloo-2);
+    font-weight: var(--font-weight-bold);
 }
+
 .logo {
-     color: var(--text-heading);
-     font-family: var(--font-family-logo);
-     font-size: 2.5rem;
-     color: var(--accent-pink);
+    font-family: var(--font-family-logo);
+    font-size: 2.5rem;
+    color: var(--accent-pink);
 }
-span {
-    color: var(--text-heading);
+
+span, p, input, textarea, button {
     font-family: var(--font-family-open-sans);
+    color: var(--text-heading);
 }
 
-p {
-     color: var(--text-heading);
-     font-family: var(--font-family-open-sans);
-}
-
+/* === LAYOUT === */
 main {
     height: 100vh;
-    padding:1rem;
+    padding: 1rem;
     gap: 1rem;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .container {
-   padding: 2rem 8rem 6rem 8rem;
-
-
+    padding: 2rem 8rem 6rem 8rem;
 }
 
 .grid-form {
@@ -51,83 +52,55 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     justify-content: space-between;
-
 }
+
 label {
     display: block;
     padding-block: 1rem;
 }
-
-   input {
-        width: 100%;
-        height: 2.8rem;
-        padding-inline: 1rem;
-        border-radius: .5rem;
-        border: solid 1px var(--input-stroke) ;
-        background-color: var(--input-base);
-        color: var(--input-placeholder);
-        
-        
-
-    }
-
-       input::placeholder {
-        color: var(--input-placeholder);
-        
-        
-
-    }
-
-
-
-
-
-   
-
 
 header {
     display: flex;
     align-items: center;
     gap: 1rem;
     text-align: left;
-    padding-block: .5rem;
-  
-    
+    padding-block: 0.5rem;
 }
 
-
-
-   #text-area {
-    all: unset;
-   
-    /* remove praticamente todos os estilos padrões */
-
-    /* Agora você aplica só o que quiser */
-    height: 8.5rem;
-    padding: .5rem 1rem;
-    border-radius: .5rem;
+/* === INPUTS & TEXTAREA === */
+input, #text-area {
+    width: 100%;
+    border-radius: 0.5rem;
     border: 1px solid var(--input-stroke);
     background-color: var(--input-base);
     color: var(--input-placeholder);
-   
+    padding: 0.5rem 1rem;
+    outline: none; /* Remove o foco padrão */
+}
 
+input {
+    height: 2.8rem;
+}
 
-    resize: none;
- 
-    outline: none;
- 
+#text-area {
+    height: 8.5rem;
+    resize: none; /* Impede redimensionamento */
+}
 
+/* === PLACEHOLDER === */
+input::placeholder,
+#text-area::placeholder {
+    color: var(--input-placeholder);
+}
 
+/* === FOCUS CUSTOM === */
+input:focus,
+#text-area:focus {
+    border: 1px solid white;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
 
-  }
-
-
-   #text-area , input , button {
-font-family: var(--font-family-open-sans);
-
-   }
-
-
-
-
-
+/* === BUTTONS === */
+button {
+    font-family: var(--font-family-open-sans);
+}
